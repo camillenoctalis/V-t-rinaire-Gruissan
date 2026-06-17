@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.cabinet-veterinaire-gruissan.fr/sitemap.xml

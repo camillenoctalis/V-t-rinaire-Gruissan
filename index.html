@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet Vétérinaire de Gruissan</title>
+  <meta id="metaDescription" name="description" content="Cabinet Vétérinaire Médico-chirurgical de Gruissan — soins, chirurgie, prévention et prise de rendez-vous en ligne.">
+  <link rel="icon" type="image/png" href="Logo/logo-cabinet-veterinaire-gruissan-vf-sans-fond.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body data-page="home">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark brand-mark-light" src="Logo/logo-cabinet-veterinaire-gruissan-vf-blanc.png" alt="Logo">
+        <img class="brand-mark brand-mark-dark" src="Logo/logo-cabinet-veterinaire-gruissan-vf-sans-fond.png" alt="Logo">
+        <div class="brand-copy">
+          <small>Gruissan</small>
+          <strong>Cabinet Vétérinaire</strong>
+        </div>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Navigation">
+        <div class="nav-links">
+          <a class="is-current" href="index.html" data-i18n="nav.home">Accueil</a>
+          <a href="equipe.html"       data-i18n="nav.team">Équipe</a>
+          <a href="cabinet.html"      data-i18n="nav.cabinet">Le cabinet</a>
+          <a href="blog.html"         data-i18n="nav.blog">Blog</a>
+          <a href="rendez-vous.html"  data-i18n="nav.booking">Rendez-vous</a>
+        </div>
+        <div class="lang-switch">
+          <button class="is-active" type="button" data-lang="fr">FR</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="header-cta" href="rendez-vous.html" data-i18n="nav.cta">Prendre rendez-vous</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ──────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="Gruissan/tour-barberousse-gruissan-1890x1000.jpg" alt="Gruissan">
+      </div>
+      <div class="hero-body">
+        <span class="hero-label" data-i18n="home.hero.label">Vétérinaire à Gruissan</span>
+        <h1 class="hero-title" data-i18n="home.hero.title">Votre vétérinaire<br>à <em>Gruissan</em>.</h1>
+        <p class="hero-sub" data-i18n="home.hero.sub">Cabinet médico-chirurgical fondé en 1997. Soins, chirurgie, imagerie et hospitalisation sous vidéosurveillance.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="rendez-vous.html" data-i18n="home.hero.cta1">Prendre rendez-vous</a>
+          <a class="btn btn-ghost"   href="tel:+33468751822" data-i18n="home.hero.cta2">04 68 75 18 22</a>
+        </div>
+        <div class="hero-figures">
+          <div class="hero-fig">
+            <strong>1997</strong>
+            <span data-i18n="home.hero.fig1">Fondé par le Dr EYME</span>
+          </div>
+          <div class="hero-fig">
+            <strong>H24</strong>
+            <span data-i18n="home.hero.fig2">Vidéosurveillance</span>
+          </div>
+          <div class="hero-fig">
+            <strong>FR&nbsp;·&nbsp;EN</strong>
+            <span data-i18n="home.hero.fig3">Équipe bilingue</span>
+          </div>
+          <div class="hero-fig">
+            <strong>6</strong>
+            <span data-i18n="home.hero.fig4">Espaces dédiés</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ───────────────────────────────────────── -->
+    <section class="services-strip">
+      <div class="container">
+        <div class="strip-header">
+          <div>
+            <div class="section-label" data-i18n="home.services.label">Ce que nous faisons</div>
+            <h2 data-i18n="home.services.title">Une structure complète,<br>à votre service.</h2>
+          </div>
+          <p class="strip-header-note" data-i18n="home.services.note">Tous les soins essentiels assurés sur place, sans transfert.</p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card" data-reveal style="--rd:.05s">
+            <span class="service-num">01</span>
+            <h3 data-i18n="home.s1.title">Consultation & prévention</h3>
+            <p data-i18n="home.s1.text">Bilan de santé, suivi clinique, antiparasitaires et conseils nutrition pour chiens, chats et NAC.</p>
+          </div>
+          <div class="service-card" data-reveal style="--rd:.1s">
+            <span class="service-num">02</span>
+            <h3 data-i18n="home.s2.title">Chirurgie & soins techniques</h3>
+            <p data-i18n="home.s2.text">Bloc opératoire dédié, soins pré et post-opératoires, hospitalisation sous surveillance vidéo.</p>
+          </div>
+          <div class="service-card" data-reveal style="--rd:.15s">
+            <span class="service-num">03</span>
+            <h3 data-i18n="home.s3.title">Imagerie médicale</h3>
+            <p data-i18n="home.s3.text">Radiographie numérique et échographie sur place. Résultats immédiats pour des décisions rapides.</p>
+          </div>
+          <div class="service-card" data-reveal style="--rd:.2s">
+            <span class="service-num">04</span>
+            <h3 data-i18n="home.s4.title">Laboratoire & analyses</h3>
+            <p data-i18n="home.s4.text">Analyses réalisées en interne. Bilan sanguin, urinaire et plus encore, pour un diagnostic précis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALLERY ────────────────────────────────────────── -->
+    <div class="gallery-ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet-acceuil.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf5.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet2.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe3.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-extérieur2.jpg" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf3.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-extérieur.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe4.JPG" alt=""></div>
+        <!-- duplicate for loop -->
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet-acceuil.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf5.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet2.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe3.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-extérieur2.jpg" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf3.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-extérieur.JPG" alt=""></div>
+        <div class="ribbon-photo"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe4.JPG" alt=""></div>
+      </div>
+    </div>
+
+    <!-- ── APPROACH / DR EYME ─────────────────────────────── -->
+    <section class="split-section">
+      <div class="split-media">
+        <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf1.JPG" alt="Dr Jean-François EYME">
+      </div>
+      <div class="split-body">
+        <div class="section-label" data-i18n="home.approach.label">Notre approche</div>
+        <h2 data-i18n="home.approach.title">Une relation médicale directe, sans intermédiaire.</h2>
+        <p data-i18n="home.approach.text">Nous avons voulu un cabinet où les décisions se prennent vite, avec les bons outils et une communication claire avec les propriétaires. Pas de délai inutile, pas de transfert superflu.</p>
+        <div class="split-note">
+          <p data-i18n="home.approach.note">Le Dr Jean-François EYME est vétérinaire depuis 1988, diplômé de l'École Nationale Vétérinaire d'Alfort et de la Faculté de Médecine de Paris.</p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="equipe.html" data-i18n="home.approach.cta">Rencontrer l'équipe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INDEPENDANCE ────────────────────────────────────── -->
+    <section class="independence-section">
+      <div class="container independence-grid">
+        <div class="independence-body" data-reveal>
+          <div class="section-label kicker-light" data-i18n="home.indep.label">Cabinet indépendant</div>
+          <h2 data-i18n="home.indep.title">Aucun groupe. Aucun actionnaire. <em>Juste votre vétérinaire.</em></h2>
+          <p data-i18n="home.indep.text">Contrairement à la majorité des cliniques, notre cabinet n'appartient à aucun groupement actionnarial. Nous ne reversons aucun dividende à des fonds de pension, qu'ils soient français ou étrangers. Cette indépendance nous permet de fixer nos tarifs librement et de prendre chaque décision médicale dans le seul intérêt de votre animal — jamais pour rémunérer des investisseurs.</p>
+          <div class="independence-quote">
+            <p data-i18n="home.indep.quote">« Je suis le fondateur et le responsable de mon cabinet. Les cliniques affiliées à des fonds de pension ont des objectifs de rentabilité qui se répercutent forcément sur les prix. »</p>
+            <cite data-i18n="home.indep.cite">— Dr Jean-François EYME, fondateur</cite>
+          </div>
+        </div>
+        <div class="independence-points" data-reveal style="--rd:.1s">
+          <div class="ipoint">
+            <strong>100%</strong>
+            <span data-i18n="home.indep.p1">Indépendant depuis la création du cabinet en 1997</span>
+          </div>
+          <div class="ipoint">
+            <strong>0</strong>
+            <span data-i18n="home.indep.p2">Dividende reversé à un fonds d'investissement ou de pension</span>
+          </div>
+          <div class="ipoint">
+            <strong>1</strong>
+            <span data-i18n="home.indep.p3">Vétérinaire responsable, votre seul interlocuteur médical</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GRUISSAN / LOCAL ───────────────────────────────── -->
+    <section class="location-section">
+      <div class="location-bg">
+        <img src="Gruissan/tour-barberousse-gruissan-1890x1000.jpg" alt="Gruissan">
+      </div>
+      <div class="container">
+        <div class="location-body">
+          <div class="section-label kicker-light" data-i18n="home.local.label">Local & accessible</div>
+          <h2 data-i18n="home.local.title">Pour les <em>habitants</em><br>et les visiteurs.</h2>
+          <p data-i18n="home.local.text">Résident, propriétaire d'une résidence secondaire ou touriste de passage — nous accueillons votre animal avec le même soin. À 10 minutes de Narbonne.</p>
+          <div class="tag-row">
+            <span class="tag" data-i18n="home.local.t1">Vétérinaire Gruissan</span>
+            <span class="tag" data-i18n="home.local.t2">Proche Narbonne</span>
+            <span class="tag" data-i18n="home.local.t3">Urgences aux horaires</span>
+            <span class="tag" data-i18n="home.local.t4">Cabinet médico-chirurgical</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOURS + PRACTICAL ──────────────────────────────── -->
+    <section class="info-section">
+      <div class="container info-grid">
+
+        <div class="info-block">
+          <div class="section-label" data-i18n="home.info.label">Infos pratiques</div>
+          <h2 data-i18n="home.info.title">Tout ce qu'il faut savoir avant de venir.</h2>
+
+          <div class="info-row" data-reveal>
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="info-row-body">
+              <strong data-i18n="home.info.addrLabel">Adresse</strong>
+              <span>40 Rue de la Tartane, 11430 Gruissan</span>
+            </div>
+          </div>
+
+          <div class="info-row" data-reveal style="--rd:.06s">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div class="info-row-body">
+              <strong data-i18n="home.info.phoneLabel">Téléphone</strong>
+              <a href="tel:+33468751822">04 68 75 18 22</a>
+            </div>
+          </div>
+
+          <div class="info-row" data-reveal style="--rd:.12s">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="info-row-body">
+              <strong data-i18n="home.info.emailLabel">Email</strong>
+              <a href="mailto:cabvet.gruissan@free.fr">cabvet.gruissan@free.fr</a>
+            </div>
+          </div>
+
+          <div class="info-row" data-reveal style="--rd:.18s">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+            </div>
+            <div class="info-row-body">
+              <strong data-i18n="home.info.langLabel">Langues</strong>
+              <span data-i18n="home.info.langText">Français, English</span>
+            </div>
+          </div>
+
+          <div class="inline-actions" style="margin-top:1.8rem">
+            <a class="btn btn-dark" href="rendez-vous.html" data-i18n="home.info.cta1">Prendre rendez-vous</a>
+            <a class="btn btn-outline-dark" href="tel:+33468751822" data-i18n="home.info.cta2">Appeler le cabinet</a>
+          </div>
+        </div>
+
+        <div class="hours-panel" data-reveal>
+          <h3 data-i18n="home.hours.title">Horaires d'ouverture</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr data-day="1"><td data-i18n="home.hours.mon">Lundi</td><td>09:00 – 12:00 / 17:00 – 19:00</td></tr>
+              <tr data-day="2"><td data-i18n="home.hours.tue">Mardi</td><td>09:00 – 12:00 / 17:00 – 19:00</td></tr>
+              <tr data-day="3"><td data-i18n="home.hours.wed">Mercredi</td><td>09:00 – 12:00 / 17:00 – 19:00</td></tr>
+              <tr data-day="4"><td data-i18n="home.hours.thu">Jeudi</td><td>09:00 – 12:00 / 17:00 – 19:00</td></tr>
+              <tr data-day="5"><td data-i18n="home.hours.fri">Vendredi</td><td>09:00 – 12:00 / 17:00 – 19:00</td></tr>
+              <tr data-day="6"><td data-i18n="home.hours.sat">Samedi</td><td>09:00 – 12:00</td></tr>
+              <tr data-day="0"><td data-i18n="home.hours.sun">Dimanche</td><td class="hours-closed" data-i18n="home.hours.closed">Fermé</td></tr>
+            </tbody>
+          </table>
+          <div class="urgency-note">
+            <strong data-i18n="home.hours.urgLabel">Urgence</strong>
+            <p data-i18n="home.hours.urgText">En cas d'urgence pendant les horaires d'ouverture, appelez-nous immédiatement au 04 68 75 18 22.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── TEAM PREVIEW ───────────────────────────────────── -->
+    <section class="team-section">
+      <div class="container">
+        <div class="team-section-head">
+          <div class="section-label" data-i18n="home.team.label">L'équipe</div>
+          <h2 data-i18n="home.team.title">Trois personnes à votre écoute.</h2>
+          <p data-i18n="home.team.sub">Une équipe soudée, formée et engagée dans la qualité des soins.</p>
+        </div>
+
+        <div class="team-grid">
+          <a class="team-card" href="equipe.html" data-reveal style="--rd:.05s">
+            <div class="team-card-photo">
+              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf4.JPG" alt="Dr Jean-François EYME">
+            </div>
+            <div class="team-card-body">
+              <div class="team-card-role" data-i18n="team.member1.role">Vétérinaire fondateur</div>
+              <div class="team-card-name">Dr Jean-François EYME</div>
+              <p class="team-card-desc" data-i18n="team.member1.text">Vétérinaire depuis 1988. Diplômé de l'ENV d'Alfort et de la Faculté de Médecine de Paris.</p>
+            </div>
+          </a>
+          <a class="team-card" href="equipe.html" data-reveal style="--rd:.1s">
+            <div class="team-card-photo">
+              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-Lysa.JPG" alt="Lysa GHIRARD">
+            </div>
+            <div class="team-card-body">
+              <div class="team-card-role" data-i18n="team.member2.role">ASV</div>
+              <div class="team-card-name">Lysa GHIRARD</div>
+              <p class="team-card-desc" data-i18n="team.member2.text">Apprentie Auxiliaire Spécialisée Vétérinaire, 2ème année.</p>
+            </div>
+          </a>
+          <a class="team-card" href="equipe.html" data-reveal style="--rd:.15s">
+            <div class="team-card-photo">
+              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-Alexcia.JPG" alt="Alexcia DEMUS">
+            </div>
+            <div class="team-card-body">
+              <div class="team-card-role" data-i18n="team.member3.role">ASV</div>
+              <div class="team-card-name">Alexcia DEMUS</div>
+              <p class="team-card-desc" data-i18n="team.member3.text">Apprentie Auxiliaire Spécialisée Vétérinaire, 1ère année depuis 2026.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="team-cta">
+          <a class="btn btn-ghost" href="equipe.html" data-i18n="home.team.cta">Voir toute l'équipe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── AVIS CLIENTS ──────────────────────────────────── -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="reviews-head" data-reveal>
+          <div class="reviews-badge">
+            <span class="reviews-stars">★★★★★</span>
+            <span class="reviews-badge-text">4,6 · plus de 300 avis Google</span>
+          </div>
+          <h2 data-i18n="reviews.title">Ils nous font confiance <em>depuis des années.</em></h2>
+          <p data-i18n="reviews.sub">Plus de 300 avis vérifiés sur Google, quasi tous à 5 étoiles.</p>
+        </div>
+
+        <div class="reviews-slider-wrap" id="reviewsSlider">
+          <div class="reviews-track-container">
+            <div class="reviews-track" id="reviewsTrack">
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Le docteur Eyme a tout simplement sauvé la vie de mon chat alors qu'un autre vétérinaire avait donné un mauvais diagnostic sur la plaie à la queue. Quelques jours après, Jean-François l'opérait d'urgence pour lui retirer la queue fracturée et gravement nécrosée. Sa vie était en danger, mais suite à ces soins mon chat vit normalement aujourd'hui. Merci infiniment à lui et à toute l'équipe. »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">JC</div>
+                  <div class="review-card-meta">
+                    <strong>Juliette C.</strong>
+                    <span>Avis Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Vétérinaire qui suit nos chiens et chat depuis 20 ans ! Un de nos mâles cane a été sauvé 2 fois après avoir été blessé… avec lui tout est possible. Merci à l'équipe 💪🙏 »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">AS</div>
+                  <div class="review-card-meta">
+                    <strong>Andréa S.</strong>
+                    <span>Avis Google · Client depuis 20 ans</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Un vétérinaire comme on n'en trouve plus. Humain, bienveillant et entièrement dédié au bien-être des animaux. Lui et toute son équipe ont tout mis en œuvre pour sauver mon chien, avec une attention, une patience et un professionnalisme exemplaires. Merci du fond du cœur. »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">NB</div>
+                  <div class="review-card-meta">
+                    <strong>Nathalie B.</strong>
+                    <span>Avis Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Le Dr Jean-François Eyme a examiné notre chienne avec beaucoup de minutie et l'a remise sur pattes. Nous recommandons sans hésiter ce cabinet, et un grand merci également à l'assistante vétérinaire Lysa. 5 étoiles ! La famille Schacht avec Mia 🙂 »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">CS</div>
+                  <div class="review-card-meta">
+                    <strong>Christoph S.</strong>
+                    <span>Avis Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Merci beaucoup pour nous avoir reçus lors du décès de notre minette. Nous étions dans la douleur et le Dr Eyme avait les mots qui nous ont aidés. Encore merci pour cette humanité dans un moment si difficile. »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">FM</div>
+                  <div class="review-card-meta">
+                    <strong>Françoise M.</strong>
+                    <span>Avis Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Merci au docteur Eyme pour son écoute et son implication à trouver les meilleures solutions. Je recommande ! Nouvelle équipe très agréable. Nola 🐶🐾 »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">GD</div>
+                  <div class="review-card-meta">
+                    <strong>Géraldine D.</strong>
+                    <span>Avis Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Avec mon épouse, nous ne pouvons que remercier le Docteur Eyme et toute son équipe pour l'accueil et les soins apportés à notre chien Golfi. Il était perdu, et le Docteur Eyme l'a sauvé. »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">YR</div>
+                  <div class="review-card-meta">
+                    <strong>Yves R.</strong>
+                    <span>Avis Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Merci Dr Eyme pour ma Canelle — malgré son âge avancé et son surpoids, vous l'avez opérée ce matin. Elle a une totale confiance en vous, qui l'avez déjà sauvée en urgence suite à une septicémie. Je recommande très sincèrement. »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">CH</div>
+                  <div class="review-card-meta">
+                    <strong>Christine H.</strong>
+                    <span>Avis Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Mon chat Noa s'étant fait attaquer, un coussinet de sa patte avant s'est retrouvé coupé en deux. Pris en urgence par le Dr Eyme entre deux rendez-vous, après 12 points de suture, mon minet marche sans boiter au bout d'une semaine. Merci Docteur 🙏 »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">NL</div>
+                  <div class="review-card-meta">
+                    <strong>Nathalie L.</strong>
+                    <span>Avis Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-card-stars">★★★★★</div>
+                <p class="review-card-text">« Nous sommes d'Alsace, en vacances à Narbonne. Petit souci de santé avec notre petite Lola… ce médecin nous a reçus sans problème et a parfaitement résolu la situation. Cabinet très compétent. On peut souffler et profiter de nos vacances ! »</p>
+                <div class="review-card-author">
+                  <div class="review-card-avatar" aria-hidden="true">MM</div>
+                  <div class="review-card-meta">
+                    <strong>Michèle M.</strong>
+                    <span>Avis Google · Alsace</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="reviews-controls">
+            <button class="reviews-btn" id="reviewsPrev" aria-label="Précédent">
+              <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg>
+            </button>
+            <div class="reviews-dots" id="reviewsDots"></div>
+            <button class="reviews-btn" id="reviewsNext" aria-label="Suivant">
+              <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <a class="reviews-google-link" href="https://g.page/r/CfN0egl6q709EAE/review" target="_blank" rel="noreferrer" data-i18n="reviews.google">Laisser un avis sur Google →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-mark" src="Logo/logo-cabinet-veterinaire-gruissan-vf-blanc.png" alt="Cabinet Vétérinaire de Gruissan">
+        <strong data-i18n="footer.brand">Cabinet Vétérinaire de Gruissan</strong>
+        <span data-i18n="footer.text">Cabinet médico-chirurgical — 40 Rue de la Tartane, 11430 Gruissan.</span>
+        <span class="footer-copy">© 2026 Cabinet Vétérinaire de Gruissan</span>
+      </div>
+      <div class="footer-meta">
+        <span>04 68 75 18 22</span>
+        <a href="mailto:cabvet.gruissan@free.fr">cabvet.gruissan@free.fr</a>
+        <a href="https://maps.google.com/?q=40+Rue+de+la+Tartane+11430+Gruissan" target="_blank" rel="noreferrer" data-i18n="footer.map">Voir sur Google Maps</a>
+      </div>
+      <div class="footer-socials">
+        <a class="social-link" href="https://www.instagram.com/cab.veterinairegruissan" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.55 1.65a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10A5 5 0 0 1 12 7Zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2Z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.facebook.com/cliniquedudreyme?mibextid=wwXIfr&rdid=RJFZFhH7a80JDXNF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GU4uRXrWT%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M13.35 21v-7.8h2.62l.4-3.04h-3.02V8.22c0-.88.25-1.47 1.5-1.47h1.6V4.03c-.28-.04-1.24-.12-2.35-.12-2.33 0-3.92 1.42-3.92 4.03v2.22H7.55v3.04h2.63V21h3.17Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Intro animation -->
+  <div id="intro" aria-hidden="true">
+    <div class="intro-content">
+      <span class="intro-eyebrow">Cabinet Vétérinaire</span>
+      <div class="intro-wordmark" id="introWordmark"></div>
+      <div class="intro-teal-line"></div>
+      <span class="intro-sub">Gruissan · Depuis 1997</span>
+    </div>
+    <div class="intro-progress-bar"></div>
+  </div>
+</body>
+</html>

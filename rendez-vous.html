@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nous contacter | Cabinet Vétérinaire de Gruissan</title>
+  <meta id="metaDescription" name="description" content="Contactez le Cabinet Vétérinaire de Gruissan par téléphone ou email pour prendre rendez-vous.">
+  <link rel="icon" type="image/png" href="Logo/logo-cabinet-veterinaire-gruissan-vf-sans-fond.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body data-page="booking">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark brand-mark-light" src="Logo/logo-cabinet-veterinaire-gruissan-vf-blanc.png" alt="Logo">
+        <img class="brand-mark brand-mark-dark" src="Logo/logo-cabinet-veterinaire-gruissan-vf-sans-fond.png" alt="Logo">
+        <div class="brand-copy">
+          <small>Gruissan</small>
+          <strong>Cabinet Vétérinaire</strong>
+        </div>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav">
+        <div class="nav-links">
+          <a href="index.html"        data-i18n="nav.home">Accueil</a>
+          <a href="equipe.html"       data-i18n="nav.team">Équipe</a>
+          <a href="cabinet.html"      data-i18n="nav.cabinet">Le cabinet</a>
+          <a href="blog.html"         data-i18n="nav.blog">Blog</a>
+          <a class="is-current" href="rendez-vous.html" data-i18n="nav.booking">Rendez-vous</a>
+        </div>
+        <div class="lang-switch">
+          <button class="is-active" type="button" data-lang="fr">FR</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="header-cta" href="tel:+33468751822">04 68 75 18 22</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="section-label" data-i18n="contact.hero.label">Nous contacter</div>
+        <h1 data-i18n="contact.hero.title">Prenez rendez-vous par téléphone ou email.</h1>
+        <p data-i18n="contact.hero.sub">Notre équipe est disponible aux horaires d'ouverture. Pour toute urgence, appelez-nous directement.</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+
+        <div class="contact-main-grid">
+
+          <!-- Téléphone -->
+          <a class="contact-card contact-card--primary" href="tel:+33468751822" data-reveal>
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <span class="contact-card-label" data-i18n="contact.phone.label">Appelez-nous</span>
+            <strong class="contact-card-value">04 68 75 18 22</strong>
+            <span class="contact-card-hint" data-i18n="contact.phone.hint">Appui direct — le moyen le plus rapide</span>
+          </a>
+
+          <!-- Email -->
+          <a class="contact-card" href="mailto:cabvet.gruissan@free.fr" data-reveal style="--rd:.08s">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <span class="contact-card-label" data-i18n="contact.email.label">Écrivez-nous</span>
+            <strong class="contact-card-value">cabvet.gruissan@free.fr</strong>
+            <span class="contact-card-hint" data-i18n="contact.email.hint">Réponse dans les meilleurs délais</span>
+          </a>
+
+          <!-- Adresse -->
+          <a class="contact-card" href="https://maps.google.com/?q=40+Rue+de+la+Tartane+11430+Gruissan" target="_blank" rel="noreferrer" data-reveal style="--rd:.16s">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <span class="contact-card-label" data-i18n="contact.addr.label">Nous trouver</span>
+            <strong class="contact-card-value">40 Rue de la Tartane</strong>
+            <span class="contact-card-hint">11430 Gruissan</span>
+          </a>
+
+        </div>
+
+        <!-- Horaires + urgence -->
+        <div class="contact-hours-block" data-reveal style="--rd:.1s">
+
+          <div class="contact-hours-panel">
+            <div class="section-label" data-i18n="contact.hours.label">Horaires</div>
+            <table class="hours-table" style="margin-top:1.2rem">
+              <tbody>
+                <tr data-day="1"><td data-i18n="home.hours.mon">Lundi</td><td>09:00 – 12:00 &nbsp;/&nbsp; 17:00 – 19:00</td></tr>
+                <tr data-day="2"><td data-i18n="home.hours.tue">Mardi</td><td>09:00 – 12:00 &nbsp;/&nbsp; 17:00 – 19:00</td></tr>
+                <tr data-day="3"><td data-i18n="home.hours.wed">Mercredi</td><td>09:00 – 12:00 &nbsp;/&nbsp; 17:00 – 19:00</td></tr>
+                <tr data-day="4"><td data-i18n="home.hours.thu">Jeudi</td><td>09:00 – 12:00 &nbsp;/&nbsp; 17:00 – 19:00</td></tr>
+                <tr data-day="5"><td data-i18n="home.hours.fri">Vendredi</td><td>09:00 – 12:00 &nbsp;/&nbsp; 17:00 – 19:00</td></tr>
+                <tr data-day="6"><td data-i18n="home.hours.sat">Samedi</td><td>09:00 – 12:00</td></tr>
+                <tr data-day="0"><td data-i18n="home.hours.sun">Dimanche</td><td class="hours-closed" data-i18n="home.hours.closed">Fermé</td></tr>
+              </tbody>
+            </table>
+            <div class="urgency-note" style="margin-top:1.4rem">
+              <strong data-i18n="home.hours.urgLabel">Urgence</strong>
+              <p data-i18n="home.hours.urgText">En cas d'urgence pendant les horaires d'ouverture, appelez-nous immédiatement au 04 68 75 18 22.</p>
+            </div>
+          </div>
+
+          <div class="contact-infos-panel">
+            <div class="section-label" data-i18n="contact.infos.label">Informations pratiques</div>
+            <ul class="contact-info-list" style="margin-top:1.2rem">
+              <li class="contact-info-item">
+                <strong data-i18n="contact.infos.lang">Langues parlées</strong>
+                <span>Français, English</span>
+              </li>
+              <li class="contact-info-item">
+                <strong data-i18n="contact.infos.access">Accès</strong>
+                <span data-i18n="contact.infos.accessText">À 10 minutes de Narbonne, parking à proximité.</span>
+              </li>
+              <li class="contact-info-item">
+                <strong data-i18n="contact.infos.species">Espèces reçues</strong>
+                <span data-i18n="contact.infos.speciesText">Chiens, chats et NAC.</span>
+              </li>
+              <li class="contact-info-item">
+                <strong data-i18n="contact.infos.payment">Paiement</strong>
+                <span data-i18n="contact.infos.paymentText">Espèces, chèque, carte bancaire.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-mark" src="Logo/logo-cabinet-veterinaire-gruissan-vf-blanc.png" alt="Cabinet Vétérinaire de Gruissan">
+        <strong data-i18n="footer.brand">Cabinet Vétérinaire de Gruissan</strong>
+        <span data-i18n="footer.text">Cabinet médico-chirurgical — 40 Rue de la Tartane, 11430 Gruissan.</span>
+        <span class="footer-copy">© 2026 Cabinet Vétérinaire de Gruissan</span>
+      </div>
+      <div class="footer-meta">
+        <span>04 68 75 18 22</span>
+        <a href="mailto:cabvet.gruissan@free.fr">cabvet.gruissan@free.fr</a>
+      </div>
+      <div class="footer-socials">
+        <a class="social-link" href="https://www.instagram.com/cab.veterinairegruissan" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.55 1.65a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10A5 5 0 0 1 12 7Zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2Z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.facebook.com/cliniquedudreyme?mibextid=wwXIfr&rdid=RJFZFhH7a80JDXNF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GU4uRXrWT%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M13.35 21v-7.8h2.62l.4-3.04h-3.02V8.22c0-.88.25-1.47 1.5-1.47h1.6V4.03c-.28-.04-1.24-.12-2.35-.12-2.33 0-3.92 1.42-3.92 4.03v2.22H7.55v3.04h2.63V21h3.17Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
