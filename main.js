@@ -26,7 +26,8 @@ const t = {
       booking: { title: "Contact | Cabinet Vétérinaire de Gruissan", description: "Contactez le Cabinet Vétérinaire de Gruissan par téléphone ou email." },
       blog:    { title: "Blog | Cabinet Vétérinaire de Gruissan", description: "Conseils vétérinaires, prévention et actualités pour chiens, chats et NAC, par le Cabinet Vétérinaire de Gruissan." },
       article:  { title: "Chenilles processionnaires : le danger pour les chiens et chats à Gruissan | Blog", description: "Symptômes, gestes d'urgence et prévention face aux chenilles processionnaires du pin sur le littoral audois." },
-      article2: { title: "Épillets de graminées : danger pour chiens et chats à Gruissan (été) | Blog", description: "Épillets de graminées : symptômes selon la localisation, réflexes d'urgence et prévention pour vos animaux cet été à Gruissan." }
+      article2: { title: "Épillets de graminées : danger pour chiens et chats à Gruissan (été) | Blog", description: "Épillets de graminées : symptômes selon la localisation, réflexes d'urgence et prévention pour vos animaux cet été à Gruissan." },
+      article3: { title: "Canicule chien chat à Gruissan : protéger son animal de la chaleur", description: "Chien ou chat pendant la canicule à Gruissan : bons réflexes, erreurs à éviter, signes d'alerte et conseils du Cabinet Vétérinaire de Gruissan proche Narbonne." }
     },
     careSummary: {
       consultation: "Consultation générale",
@@ -208,6 +209,13 @@ const t = {
       "blog.card2.cta":     "Lire l'article",
       "blog.card2.read":    "6 min de lecture",
 
+      /* blog card 3 */
+      "blog.card3.tag":     "Prévention",
+      "blog.card3.title":   "Canicule à Gruissan : comment protéger votre chien ou votre chat pendant les fortes chaleurs",
+      "blog.card3.excerpt": "En été, les chiens et les chats peuvent souffrir rapidement de la chaleur. Découvrez les bons réflexes, les erreurs à éviter et les signes d'alerte à surveiller à Gruissan.",
+      "blog.card3.cta":     "Lire l'article",
+      "blog.card3.read":    "8 min de lecture",
+
       /* reviews */
       "reviews.label":  "Avis clients",
       "reviews.title":  "Ils nous font confiance depuis des années.",
@@ -224,7 +232,8 @@ const t = {
       booking: { title: "Contact | Gruissan Veterinary Clinic", description: "Contact the Gruissan Veterinary Clinic by phone or email." },
       blog:    { title: "Blog | Gruissan Veterinary Clinic", description: "Veterinary advice, prevention and news for dogs, cats and exotic pets, by the Gruissan Veterinary Clinic." },
       article:  { title: "Pine processionary caterpillars: the danger for dogs and cats in Gruissan | Blog", description: "Symptoms, emergency steps and prevention against pine processionary caterpillars on the Aude coastline." },
-      article2: { title: "Grass seeds: the summer danger for dogs and cats in Gruissan | Blog", description: "Grass seeds: symptoms by location, emergency steps and prevention for your pets this summer in Gruissan." }
+      article2: { title: "Grass seeds: the summer danger for dogs and cats in Gruissan | Blog", description: "Grass seeds: symptoms by location, emergency steps and prevention for your pets this summer in Gruissan." },
+      article3: { title: "Heatwave dogs and cats in Gruissan: how to protect your pet from the heat", description: "Dogs and cats during a heatwave in Gruissan: best practices, mistakes to avoid, warning signs and advice from the Gruissan Veterinary Clinic." }
     },
     careSummary: {
       consultation: "General consultation",
@@ -405,6 +414,13 @@ const t = {
       "blog.card2.excerpt": "In summer, grass seeds lodge in paws, ears, eyes and noses and migrate deep into tissue. Recognise the signs and know what to do.",
       "blog.card2.cta":     "Read the article",
       "blog.card2.read":    "6 min read",
+
+      /* blog card 3 */
+      "blog.card3.tag":     "Prevention",
+      "blog.card3.title":   "Heatwave in Gruissan: how to protect your dog or cat from the heat",
+      "blog.card3.excerpt": "In summer, dogs and cats can suffer from the heat quickly. Discover the right reflexes, mistakes to avoid and warning signs to watch for in Gruissan.",
+      "blog.card3.cta":     "Read the article",
+      "blog.card3.read":    "8 min read",
 
       /* reviews */
       "reviews.label":  "Client reviews",
