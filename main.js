@@ -27,7 +27,8 @@ const t = {
       blog:    { title: "Blog | Cabinet Vétérinaire de Gruissan", description: "Conseils vétérinaires, prévention et actualités pour chiens, chats et NAC, par le Cabinet Vétérinaire de Gruissan." },
       article:  { title: "Chenilles processionnaires : le danger pour les chiens et chats à Gruissan | Blog", description: "Symptômes, gestes d'urgence et prévention face aux chenilles processionnaires du pin sur le littoral audois." },
       article2: { title: "Épillets de graminées : danger pour chiens et chats à Gruissan (été) | Blog", description: "Épillets de graminées : symptômes selon la localisation, réflexes d'urgence et prévention pour vos animaux cet été à Gruissan." },
-      article3: { title: "Canicule chien chat à Gruissan : protéger son animal de la chaleur", description: "Chien ou chat pendant la canicule à Gruissan : bons réflexes, erreurs à éviter, signes d'alerte et conseils du Cabinet Vétérinaire de Gruissan proche Narbonne." }
+      article3: { title: "Canicule chien chat à Gruissan : protéger son animal de la chaleur", description: "Chien ou chat pendant la canicule à Gruissan : bons réflexes, erreurs à éviter, signes d'alerte et conseils du Cabinet Vétérinaire de Gruissan proche Narbonne." },
+      article4: { title: "Épillets à Gruissan : surveiller son chien et son chat en été | Blog", description: "Épillets chez le chien et le chat à Gruissan : où ils se logent, signes à surveiller après une balade et conseils du Cabinet Vétérinaire de Gruissan." }
     },
     careSummary: {
       consultation: "Consultation générale",
@@ -216,6 +217,13 @@ const t = {
       "blog.card3.cta":     "Lire l'article",
       "blog.card3.read":    "8 min de lecture",
 
+      /* blog card 4 */
+      "blog.card4.tag":     "Prévention",
+      "blog.card4.title":   "Épillets à Gruissan : pourquoi faut-il les surveiller chez le chien et le chat ?",
+      "blog.card4.excerpt": "Où les épillets se logent, quels signes surveiller après une balade et quand consulter — le guide complet du Cabinet Vétérinaire de Gruissan.",
+      "blog.card4.cta":     "Lire l'article",
+      "blog.card4.read":    "7 min de lecture",
+
       /* reviews */
       "reviews.label":  "Avis clients",
       "reviews.title":  "Ils nous font confiance depuis des années.",
@@ -233,7 +241,8 @@ const t = {
       blog:    { title: "Blog | Gruissan Veterinary Clinic", description: "Veterinary advice, prevention and news for dogs, cats and exotic pets, by the Gruissan Veterinary Clinic." },
       article:  { title: "Pine processionary caterpillars: the danger for dogs and cats in Gruissan | Blog", description: "Symptoms, emergency steps and prevention against pine processionary caterpillars on the Aude coastline." },
       article2: { title: "Grass seeds: the summer danger for dogs and cats in Gruissan | Blog", description: "Grass seeds: symptoms by location, emergency steps and prevention for your pets this summer in Gruissan." },
-      article3: { title: "Heatwave dogs and cats in Gruissan: how to protect your pet from the heat", description: "Dogs and cats during a heatwave in Gruissan: best practices, mistakes to avoid, warning signs and advice from the Gruissan Veterinary Clinic." }
+      article3: { title: "Heatwave dogs and cats in Gruissan: how to protect your pet from the heat", description: "Dogs and cats during a heatwave in Gruissan: best practices, mistakes to avoid, warning signs and advice from the Gruissan Veterinary Clinic." },
+      article4: { title: "Grass seeds in Gruissan: why monitor your dog and cat in summer | Blog", description: "Grass seeds in dogs and cats in Gruissan: where they lodge, warning signs after a walk and advice from the Gruissan Veterinary Clinic." }
     },
     careSummary: {
       consultation: "General consultation",
@@ -421,6 +430,13 @@ const t = {
       "blog.card3.excerpt": "In summer, dogs and cats can suffer from the heat quickly. Discover the right reflexes, mistakes to avoid and warning signs to watch for in Gruissan.",
       "blog.card3.cta":     "Read the article",
       "blog.card3.read":    "8 min read",
+
+      /* blog card 4 */
+      "blog.card4.tag":     "Prevention",
+      "blog.card4.title":   "Grass seeds in Gruissan: why monitor your dog and cat in summer?",
+      "blog.card4.excerpt": "Where grass seeds lodge, warning signs to watch for after a walk, and when to consult — the complete guide from the Gruissan Veterinary Clinic.",
+      "blog.card4.cta":     "Read the article",
+      "blog.card4.read":    "7 min read",
 
       /* reviews */
       "reviews.label":  "Client reviews",
@@ -706,6 +722,43 @@ function initCalendar() {
 }
 
 /* ============================================================
+   GALLERY CAROUSEL
+   ============================================================ */
+function initGalleryCarousel() {
+  const viewport = document.getElementById("galleryViewport");
+  const prevBtn  = document.getElementById("galleryPrev");
+  const nextBtn  = document.getElementById("galleryNext");
+  if (!viewport) return;
+
+  const step = () => viewport.offsetWidth * 0.75;
+
+  prevBtn.addEventListener("click", () => viewport.scrollBy({ left: -step(), behavior: "smooth" }));
+  nextBtn.addEventListener("click", () => viewport.scrollBy({ left:  step(), behavior: "smooth" }));
+
+  function updateBtns() {
+    prevBtn.disabled = viewport.scrollLeft <= 2;
+    nextBtn.disabled = viewport.scrollLeft >= viewport.scrollWidth - viewport.offsetWidth - 2;
+  }
+  viewport.addEventListener("scroll", updateBtns, { passive: true });
+  updateBtns();
+
+  /* drag to scroll */
+  let isDown = false, startX = 0, scrollLeft = 0;
+  viewport.addEventListener("mousedown", e => {
+    isDown = true;
+    viewport.classList.add("is-grabbing");
+    startX = e.pageX - viewport.offsetLeft;
+    scrollLeft = viewport.scrollLeft;
+  });
+  document.addEventListener("mouseup", () => { isDown = false; viewport.classList.remove("is-grabbing"); });
+  viewport.addEventListener("mousemove", e => {
+    if (!isDown) return;
+    e.preventDefault();
+    viewport.scrollLeft = scrollLeft - (e.pageX - viewport.offsetLeft - startX);
+  });
+}
+
+/* ============================================================
    REVIEWS SLIDER
    ============================================================ */
 function initReviewsSlider() {
@@ -830,6 +883,7 @@ window.addEventListener("scroll", updateHeader, { passive: true });
 
 initMenu();
 initReveal();
+initGalleryCarousel();
 initReviewsSlider();
 highlightToday();
 

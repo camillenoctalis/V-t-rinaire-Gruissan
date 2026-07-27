@@ -476,60 +476,65 @@ button { border: 0; background: none; cursor: pointer; color: inherit; }
 }
 
 /* ============================================================
-   GALLERY RIBBON
+   GALLERY CAROUSEL
    ============================================================ */
-.gallery-ribbon {
-  overflow: hidden;
+.gallery-carousel {
+  position: relative;
   padding: 4rem 0;
   background: var(--smoke);
-  position: relative;
 }
 
-.gallery-ribbon::before,
-.gallery-ribbon::after {
-  content: "";
-  position: absolute;
-  top: 0; bottom: 0;
-  width: 7rem;
-  z-index: 2;
-  pointer-events: none;
+.gallery-viewport {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
 }
+.gallery-viewport::-webkit-scrollbar { display: none; }
+.gallery-viewport.is-grabbing { cursor: grabbing; user-select: none; }
 
-.gallery-ribbon::before { left:  0; background: linear-gradient(90deg,  #F2F5F8, transparent); }
-.gallery-ribbon::after  { right: 0; background: linear-gradient(-90deg, #F2F5F8, transparent); }
-
-.ribbon-track {
+.gallery-track {
   display: flex;
   gap: .9rem;
-  width: max-content;
-  animation: ribbonScroll 32s linear infinite;
+  padding: 0 4.5rem;
 }
 
-.ribbon-track:hover { animation-play-state: paused; }
-
-.ribbon-photo {
-  width: 22rem;
+.gallery-slide {
+  flex: 0 0 22rem;
   height: 15rem;
-  flex-shrink: 0;
   overflow: hidden;
   border-radius: 3px;
   box-shadow: var(--shadow-s);
 }
 
-.ribbon-photo:nth-child(even) { height: 14rem; margin-top: 1.2rem; }
-
-.ribbon-photo img {
+.gallery-slide img {
   width: 100%; height: 100%;
   object-fit: cover;
   transition: transform .5s;
+  pointer-events: none;
 }
+.gallery-slide:hover img { transform: scale(1.04); }
 
-.ribbon-photo:hover img { transform: scale(1.05); }
-
-@keyframes ribbonScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 3rem; height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0,0,0,.18);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .2s, color .2s, opacity .2s;
+  color: var(--navy);
 }
+.gallery-btn:hover { background: var(--navy); color: white; }
+.gallery-btn svg { width: 1.3rem; height: 1.3rem; }
+.gallery-btn:disabled { opacity: .35; pointer-events: none; }
+.gallery-prev { left: .8rem; }
+.gallery-next { right: .8rem; }
 
 /* ============================================================
    SPLIT SECTION (approach / Dr EYME)
@@ -2286,8 +2291,8 @@ button { border: 0; background: none; cursor: pointer; color: inherit; }
   .service-card { border-right: 0 !important; border-bottom: 1px solid var(--line-d) !important; }
   .service-card:last-child { border-bottom: 0 !important; }
 
-  .ribbon-photo { width: 16rem; height: 11rem !important; }
-  .ribbon-photo:nth-child(even) { margin-top: 1.2rem; }
+  .gallery-slide { flex: 0 0 16rem; height: 11rem; }
+  .gallery-track { padding: 0 3rem; }
 
   .team-grid { grid-template-columns: 1fr; }
   .team-full-grid { grid-template-columns: 1fr; }
