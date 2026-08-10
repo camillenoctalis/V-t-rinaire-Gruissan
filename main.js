@@ -231,6 +231,7 @@ const t = {
       "blog.card5.excerpt": "Identification, antiparasitaires, chaleur, épillets, transport… quelques vérifications simples pour partir serein à Gruissan avec votre chien ou votre chat.",
       "blog.card5.cta":     "Lire l'article",
       "blog.card5.read":    "7 min de lecture",
+      "blog.more.show":     "Voir les articles précédents",
 
       /* reviews */
       "reviews.label":  "Avis clients",
@@ -453,6 +454,7 @@ const t = {
       "blog.card5.excerpt": "ID chip, antiparasites, heat, grass seeds, transport… a simple checklist to travel safely to Gruissan with your dog or cat.",
       "blog.card5.cta":     "Read the article",
       "blog.card5.read":    "7 min read",
+      "blog.more.show":     "View previous articles",
 
       /* reviews */
       "reviews.label":  "Client reviews",
@@ -890,6 +892,23 @@ function initIntro() {
 }
 
 /* ============================================================
+   BLOG: TOGGLE OLDER ARTICLES
+   ============================================================ */
+function initBlogToggle() {
+  const btn  = document.getElementById("blogShowMore");
+  const grid = document.getElementById("blogMoreGrid");
+  if (!btn || !grid) return;
+  btn.addEventListener("click", () => {
+    const isOpen = grid.classList.toggle("is-open");
+    btn.classList.toggle("is-open", isOpen);
+    const label = btn.querySelector("[data-i18n='blog.more.show']");
+    if (label) {
+      label.textContent = isOpen ? "Masquer les articles précédents" : "Voir les articles précédents";
+    }
+  });
+}
+
+/* ============================================================
    INIT
    ============================================================ */
 initIntro();
@@ -901,6 +920,7 @@ initMenu();
 initReveal();
 initGalleryCarousel();
 initReviewsSlider();
+initBlogToggle();
 highlightToday();
 
 document.querySelectorAll("[data-lang]").forEach(btn => {
