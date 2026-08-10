@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="Gruissan/tour-barberousse-gruissan-1890x1000.jpg" fetchpriority="high">
   <script src="main.js" defer></script>
 </head>
 <body data-page="home">
@@ -17,8 +18,8 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">
-        <img class="brand-mark brand-mark-light" src="Logo/logo-cabinet-veterinaire-gruissan-vf-blanc.png" alt="Logo">
-        <img class="brand-mark brand-mark-dark" src="Logo/logo-cabinet-veterinaire-gruissan-vf-sans-fond.png" alt="Logo">
+        <img class="brand-mark brand-mark-light" src="Logo/logo-cabinet-veterinaire-gruissan-vf-blanc.png" alt="Logo" decoding="async">
+        <img class="brand-mark brand-mark-dark" src="Logo/logo-cabinet-veterinaire-gruissan-vf-sans-fond.png" alt="Logo" decoding="async">
         <div class="brand-copy">
           <small>Gruissan</small>
           <strong>Cabinet Vétérinaire</strong>
@@ -51,7 +52,7 @@
     <!-- ── HERO ──────────────────────────────────────────── -->
     <section class="hero">
       <div class="hero-media">
-        <img src="Gruissan/tour-barberousse-gruissan-1890x1000.jpg" alt="Gruissan" fetchpriority="high">
+        <img src="Gruissan/tour-barberousse-gruissan-1890x1000.jpg" alt="Gruissan" fetchpriority="high" decoding="async">
       </div>
       <div class="hero-body">
         <span class="hero-label" data-i18n="home.hero.label">Vétérinaire à Gruissan</span>
@@ -125,16 +126,16 @@
       </button>
       <div class="gallery-viewport" id="galleryViewport">
         <div class="gallery-track">
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet-acceuil.JPG" alt="Salle d'accueil du cabinet" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe.JPG" alt="L'équipe du cabinet" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet.JPG" alt="Salle de consultation" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf5.JPG" alt="Dr Jean-François EYME" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet2.JPG" alt="Équipements du cabinet" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe3.JPG" alt="Équipe vétérinaire" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-extérieur2.jpg" alt="Extérieur du cabinet" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf3.JPG" alt="Dr EYME en consultation" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-extérieur.JPG" alt="Entrée du cabinet" loading="lazy"></div>
-          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe4.JPG" alt="L'équipe du cabinet vétérinaire" loading="lazy"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet-acceuil.JPG" alt="Salle d'accueil du cabinet" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe.JPG" alt="L'équipe du cabinet" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet.JPG" alt="Salle de consultation" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf5.JPG" alt="Dr Jean-François EYME" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-cabinet2.JPG" alt="Équipements du cabinet" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe3.JPG" alt="Équipe vétérinaire" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-extérieur2.jpg" alt="Extérieur du cabinet" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf3.JPG" alt="Dr EYME en consultation" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-extérieur.JPG" alt="Entrée du cabinet" loading="lazy" decoding="async"></div>
+          <div class="gallery-slide"><img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-equipe4.JPG" alt="L'équipe du cabinet vétérinaire" loading="lazy" decoding="async"></div>
         </div>
       </div>
       <button class="gallery-btn gallery-next" id="galleryNext" aria-label="Photo suivante">
@@ -145,7 +146,7 @@
     <!-- ── APPROACH / DR EYME ─────────────────────────────── -->
     <section class="split-section">
       <div class="split-media">
-        <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf1.JPG" alt="Dr Jean-François EYME" loading="lazy">
+        <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf1.JPG" alt="Dr Jean-François EYME" loading="lazy" decoding="async">
       </div>
       <div class="split-body">
         <div class="section-label" data-i18n="home.approach.label">Notre approche</div>
@@ -192,7 +193,7 @@
     <!-- ── GRUISSAN / LOCAL ───────────────────────────────── -->
     <section class="location-section">
       <div class="location-bg">
-        <img src="Gruissan/tour-barberousse-gruissan-1890x1000.jpg" alt="Gruissan" loading="lazy">
+        <img src="Gruissan/tour-barberousse-gruissan-1890x1000.jpg" alt="Gruissan" loading="lazy" decoding="async">
       </div>
       <div class="container">
         <div class="location-body">
@@ -297,7 +298,7 @@
         <div class="team-grid">
           <a class="team-card" href="equipe.html" data-reveal style="--rd:.05s">
             <div class="team-card-photo">
-              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf4.JPG" alt="Dr Jean-François EYME" loading="lazy">
+              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-jf4.JPG" alt="Dr Jean-François EYME" loading="lazy" decoding="async">
             </div>
             <div class="team-card-body">
               <div class="team-card-role" data-i18n="team.member1.role">Vétérinaire fondateur</div>
@@ -307,7 +308,7 @@
           </a>
           <a class="team-card" href="equipe.html" data-reveal style="--rd:.1s">
             <div class="team-card-photo">
-              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-Lysa.JPG" alt="Lysa GHIRARD" loading="lazy">
+              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-Lysa.JPG" alt="Lysa GHIRARD" loading="lazy" decoding="async">
             </div>
             <div class="team-card-body">
               <div class="team-card-role" data-i18n="team.member2.role">ASV</div>
@@ -317,7 +318,7 @@
           </a>
           <a class="team-card" href="equipe.html" data-reveal style="--rd:.15s">
             <div class="team-card-photo">
-              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-Alexcia.JPG" alt="Alexcia DEMUS" loading="lazy">
+              <img src="Photos/Shooting Juin 2026/cabinet-veterinaire-gruissan-Alexcia.JPG" alt="Alexcia DEMUS" loading="lazy" decoding="async">
             </div>
             <div class="team-card-body">
               <div class="team-card-role" data-i18n="team.member3.role">ASV</div>
@@ -492,7 +493,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img class="footer-brand-mark" src="Logo/logo-cabinet-veterinaire-gruissan-vf-blanc.png" alt="Cabinet Vétérinaire de Gruissan">
+        <img class="footer-brand-mark" src="Logo/logo-cabinet-veterinaire-gruissan-vf-blanc.png" alt="Cabinet Vétérinaire de Gruissan" decoding="async">
         <strong data-i18n="footer.brand">Cabinet Vétérinaire de Gruissan</strong>
         <span data-i18n="footer.text">Cabinet médico-chirurgical — 40 Rue de la Tartane, 11430 Gruissan.</span>
         <span class="footer-copy">© 2026 Cabinet Vétérinaire de Gruissan</span>

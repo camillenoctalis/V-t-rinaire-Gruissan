@@ -28,7 +28,8 @@ const t = {
       article:  { title: "Chenilles processionnaires : le danger pour les chiens et chats à Gruissan | Blog", description: "Symptômes, gestes d'urgence et prévention face aux chenilles processionnaires du pin sur le littoral audois." },
       article2: { title: "Épillets de graminées : danger pour chiens et chats à Gruissan (été) | Blog", description: "Épillets de graminées : symptômes selon la localisation, réflexes d'urgence et prévention pour vos animaux cet été à Gruissan." },
       article3: { title: "Canicule chien chat à Gruissan : protéger son animal de la chaleur", description: "Chien ou chat pendant la canicule à Gruissan : bons réflexes, erreurs à éviter, signes d'alerte et conseils du Cabinet Vétérinaire de Gruissan proche Narbonne." },
-      article4: { title: "Épillets à Gruissan : surveiller son chien et son chat en été | Blog", description: "Épillets chez le chien et le chat à Gruissan : où ils se logent, signes à surveiller après une balade et conseils du Cabinet Vétérinaire de Gruissan." }
+      article4: { title: "Épillets à Gruissan : surveiller son chien et son chat en été | Blog", description: "Épillets chez le chien et le chat à Gruissan : où ils se logent, signes à surveiller après une balade et conseils du Cabinet Vétérinaire de Gruissan." },
+      article5: { title: "Vacances à Gruissan avec son animal : les bons réflexes | Blog", description: "Partir en vacances à Gruissan avec son chien ou son chat : checklist avant le départ, chaleur, épillets, transport et vétérinaire sur place." }
     },
     careSummary: {
       consultation: "Consultation générale",
@@ -224,6 +225,13 @@ const t = {
       "blog.card4.cta":     "Lire l'article",
       "blog.card4.read":    "7 min de lecture",
 
+      /* blog card 5 */
+      "blog.card5.tag":     "Conseils",
+      "blog.card5.title":   "En vacances à Gruissan avec votre animal : les bons réflexes avant et pendant le séjour",
+      "blog.card5.excerpt": "Identification, antiparasitaires, chaleur, épillets, transport… quelques vérifications simples pour partir serein à Gruissan avec votre chien ou votre chat.",
+      "blog.card5.cta":     "Lire l'article",
+      "blog.card5.read":    "7 min de lecture",
+
       /* reviews */
       "reviews.label":  "Avis clients",
       "reviews.title":  "Ils nous font confiance depuis des années.",
@@ -242,7 +250,8 @@ const t = {
       article:  { title: "Pine processionary caterpillars: the danger for dogs and cats in Gruissan | Blog", description: "Symptoms, emergency steps and prevention against pine processionary caterpillars on the Aude coastline." },
       article2: { title: "Grass seeds: the summer danger for dogs and cats in Gruissan | Blog", description: "Grass seeds: symptoms by location, emergency steps and prevention for your pets this summer in Gruissan." },
       article3: { title: "Heatwave dogs and cats in Gruissan: how to protect your pet from the heat", description: "Dogs and cats during a heatwave in Gruissan: best practices, mistakes to avoid, warning signs and advice from the Gruissan Veterinary Clinic." },
-      article4: { title: "Grass seeds in Gruissan: why monitor your dog and cat in summer | Blog", description: "Grass seeds in dogs and cats in Gruissan: where they lodge, warning signs after a walk and advice from the Gruissan Veterinary Clinic." }
+      article4: { title: "Grass seeds in Gruissan: why monitor your dog and cat in summer | Blog", description: "Grass seeds in dogs and cats in Gruissan: where they lodge, warning signs after a walk and advice from the Gruissan Veterinary Clinic." },
+      article5: { title: "Holiday in Gruissan with your pet: tips before and during your stay | Blog", description: "Taking your dog or cat on holiday to Gruissan: pre-departure checklist, summer risks, heat, grass seeds and local vet contact." }
     },
     careSummary: {
       consultation: "General consultation",
@@ -437,6 +446,13 @@ const t = {
       "blog.card4.excerpt": "Where grass seeds lodge, warning signs to watch for after a walk, and when to consult — the complete guide from the Gruissan Veterinary Clinic.",
       "blog.card4.cta":     "Read the article",
       "blog.card4.read":    "7 min read",
+
+      /* blog card 5 */
+      "blog.card5.tag":     "Tips",
+      "blog.card5.title":   "Holiday in Gruissan with your pet: tips before and during your stay",
+      "blog.card5.excerpt": "ID chip, antiparasites, heat, grass seeds, transport… a simple checklist to travel safely to Gruissan with your dog or cat.",
+      "blog.card5.cta":     "Read the article",
+      "blog.card5.read":    "7 min read",
 
       /* reviews */
       "reviews.label":  "Client reviews",

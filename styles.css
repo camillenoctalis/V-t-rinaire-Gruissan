@@ -30,6 +30,18 @@ html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 body { font-family: "Manrope", system-ui, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
+
+/* Image loading placeholders — prevents blank white boxes during load */
+.hero-media,
+.gallery-slide,
+.gallery-cell,
+.blog-card-photo,
+.team-card-photo,
+.team-full-photo,
+.split-media,
+.cabinet-story-photo,
+.article-cover .container,
+.ribbon-photo { background: #dde0de; }
 button, input, select, textarea { font: inherit; }
 button { border: 0; background: none; cursor: pointer; color: inherit; }
 .container { width: var(--c); margin: 0 auto; }
